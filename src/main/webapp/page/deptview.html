@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dept view</title>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/com.css">
+<link rel="stylesheet" href="../css/sideNavbar.css">
+<link rel="stylesheet" href="../css/overlay.css">
+<link rel="stylesheet" href="../css/buttonPurple.css">
+
+<script type="text/javascript" defer src="../js/sideNavbar.js"></script>
+<script type="text/javascript" defer src="../js/overlay.js"></script>
+</head>
+<body>
+
+	<div id="myOverlay" class="overlay">
+		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+		<div class="overlay-content">
+			<form action="dept">
+				<input type="hidden" name="command" value="deptone"> <input
+					type="text" placeholder="부서 번호 입력" name="search">
+				<button type="submit" class="overlayButton"
+					onClick="ClickOverlayButton">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div class="mainContainer">
+
+		<!-- side navigation bar -->
+		<div class="sidenav">
+			<a href="../index.html">Projects</a>
+
+			<form action="com" id="goHomeForm">
+				<input type="hidden" name="command" value="home"> <a
+					href="#" id="goHomeA"> Home </a>
+			</form>
+			<form action="com" id="goDeptForm">
+				<input type="hidden" name="command" value="dept"> <a
+					href="#" id="goDeptA" style="color: black; background-color: #E7EFC5;"> Dept Info</a>
+			</form>
+
+			<form action="com" id="goEmpForm">
+				<input type="hidden" name="command" value="emp"> <a href="#"
+					id="goEmpA"> Emp Info </a>
+			</form>
+		</div>
+
+		<div class="mainContents">
+			<div class="content">
+				<h3 style="color: gray; font-style: italic;">Company
+					management application</h3>
+				<h2>부서 조회</h2>
+
+				<div class="buttonPosition">
+					<form action="dept">
+						<input type="hidden" name="command" value="all">
+						<button class="golink" type="submit">전체 부서 조회</button>
+					</form>
+
+					<button class="openBtn golink" onclick="openSearch()">특정 부서 조회</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+h2 {
+	color: rgba(90, 50, 90);
+	border-bottom: 1px solid gray;
+	padding-bottom: 20px;
+	margin-bottom: 15px;
+}
+
+/* table styles */
+#depts {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	padding: 15px;
+}
+
+#depts td, #depts th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+#depts tr:nth-child(even) {
+	background-color: rgb(150, 100, 150);
+}
+
+#depts tr:hover {
+	color: #FF6F59;
+	background-color: #E7EFC5;
+	
+	font-size: 1.2em
+}
+
+#depts th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: rgb(100, 70, 100);
+	color: white;
+}

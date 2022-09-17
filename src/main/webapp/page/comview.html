@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>company view</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/com.css">
+	<link rel="stylesheet" href="../css/sideNavbar.css">
+
+	<script type="text/javascript" defer src="../js/sideNavbar.js"></script>
+	<style>
+		li {
+			color: gray;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="mainContainer">
+		<div class="sidenav">
+			<!-- side navigation bar -->
+			<a href="../index.html">Projects</a>
+			<form action="com" id="goHomeForm">
+				<input type="hidden" name="command" value="home"> <a href="#" id="goHomeA"
+					style="color: black; background-color: #E7EFC5;"> Home </a>
+			</form>
+			<form action="com" id="goDeptForm">
+				<input type="hidden" name="command" value="dept"> <a href="#" id="goDeptA"> Dept Info</a>
+			</form>
+
+			<form action="com" id="goEmpForm">
+				<input type="hidden" name="command" value="emp"> <a href="#" id="goEmpA"> Emp Info </a>
+			</form>
+
+		</div>
+
+		<div class="mainContents">
+			<div class="content">
+				<!-- dept & emp 데이터로 제공하는 목록들  -->
+				<h3 style="color: gray; font-style: italic;">Company
+					management application</h3>
+				<h2>제공 기능</h2>
+
+				<h3 style="color: purple">부서 관리</h3>
+				<ul style="list-style-type: square;">
+					<li>전체 부서 조회</li>
+					<li>선택 부서 조회</li>
+				</ul>
+
+				<h3 style="color: green">직원 관리</h3>
+				<ul style="list-style-type: square;">
+					<li>전체 직원 조회</li>
+					<li>선택 직원 조회</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

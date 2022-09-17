@@ -1,0 +1,63 @@
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* position about go link button */
+.buttonPosition {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	position: relative;
+	top: 30px;
+}
+
+/* Style the navigate button */
+.golink {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8f23e1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.golink:hover {background-color: #550593}
+
+.golink:active {
+  background-color: #550593;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#London {background-color:rgb(181 68 68);}
+#Paris {background-color:#228122;}
+#Tokyo {background-color:#4b4bf3;}
+#Oslo {background-color:#e3a533;}

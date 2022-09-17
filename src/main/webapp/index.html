@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index</title>
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/buttonPurple.css">
+
+<script type="text/javascript" defer src="js/index.js"></script>
+<style>
+.golink {
+	background-color: rgba(220, 220, 130);
+}
+
+.golink:hover {
+	background-color: rgba(250, 250, 220);
+	color: black;
+	font-size: 2em;
+}
+
+.golink:active {
+	background-color: rgba(250, 250, 220);
+}
+</style>
+</head>
+<body>
+	<div id="London" class="tabcontent">
+		<h1>Dept & Emp 검색 Project</h1>
+		<p>Dept & Emp 데이터 조회 서비스</p>
+	</div>
+
+	<div id="Paris" class="tabcontent">
+		<h1>Project 2</h1>
+		<p>Project 2 description...</p>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+		<h1>Project 3</h1>
+		<p>Project 3 description...</p>
+	</div>
+
+	<div id="Oslo" class="tabcontent">
+		<h1>Project 4</h1>
+		<p>Project 4 description...</p>
+	</div>
+
+	<button class="tablink" onclick="openCity('London', this, 'red')"
+		id="defaultOpen">project 1</button>
+	<button class="tablink" onclick="openCity('Paris', this, 'green')">Project
+		2</button>
+	<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Project
+		3</button>
+	<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Project
+		4</button>
+
+	<div class="buttonPosition">
+		<button class="golink" onclick="openContents()">구경하기</button>
+	</div>
+
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+	;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;
+}
+
+h2 {
+	border-bottom: 1px solid gray;
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+}
+/* Style the main container */
+.mainContainer {
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 3fr 7fr;
+}
+
+/* Style the content */
+.content {
+	padding: 20px;
+	justify-content: center;
+}

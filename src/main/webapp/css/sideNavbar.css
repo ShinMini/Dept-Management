@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/* Style the side navigation */
+.sidenav {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+}
+
+/* Side navigation links */
+.sidenav a {
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.sidenav div {
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	display: block;
+}
